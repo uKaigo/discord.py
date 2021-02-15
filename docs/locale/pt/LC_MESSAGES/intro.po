@@ -1,146 +1,122 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015-present, Rapptz
-# This file is distributed under the same license as the discord.py package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: discord.py 1.7.0a\n"
+"Project-Id-Version: discordpy-pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-30 23:51-0300\n"
-"PO-Revision-Date: 2021-01-31 19:17-0300\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: pt\n"
-"Language-Team: pt <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"PO-Revision-Date: 2021-02-15 00:14\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: discordpy-pt\n"
+"X-Crowdin-Project-ID: 439524\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: intro.pot\n"
+"X-Crowdin-File-ID: 54\n"
+"Language: pt_BR\n"
 
 #: ../../intro.rst:6
 msgid "Introduction"
-msgstr ""
+msgstr "Introdução"
 
 #: ../../intro.rst:8
-msgid ""
-"This is the documentation for discord.py, a library for Python to aid in "
-"creating applications that utilise the Discord API."
-msgstr ""
+msgid "This is the documentation for discord.py, a library for Python to aid in creating applications that utilise the Discord API."
+msgstr "Esta é a documentação do discord.py, uma biblioteca para Python que auxilia na criação de aplicativos que utilizam a API do Discord."
 
 #: ../../intro.rst:12
 msgid "Prerequisites"
-msgstr ""
+msgstr "Pré-requisitos"
 
 #: ../../intro.rst:14
-msgid ""
-"discord.py works with Python 3.5.3 or higher. Support for earlier "
-"versions of Python is not provided. Python 2.7 or lower is not supported."
-" Python 3.4 or lower is not supported due to one of the dependencies "
-"(:doc:`aiohttp <aio:index>`) not supporting Python 3.4."
-msgstr ""
+msgid "discord.py works with Python 3.5.3 or higher. Support for earlier versions of Python is not provided. Python 2.7 or lower is not supported. Python 3.4 or lower is not supported due to one of the dependencies (:doc:`aiohttp <aio:index>`) not supporting Python 3.4."
+msgstr "O discord.py funciona com Python 3.5.3 ou superior. Não é fornecido suporte para versões anteriores do Python. Python 2.7 ou inferior não é suportado. O Python 3.4 ou inferior não é suportado devido a uma das dependências (:doc:`aiohttp <aio:index>`) que não suporta o Python 3.4."
 
 #: ../../intro.rst:22
 msgid "Installing"
-msgstr ""
+msgstr "Instalando"
 
 #: ../../intro.rst:24
 msgid "You can get the library directly from PyPI: ::"
-msgstr ""
+msgstr "Você pode obter a biblioteca diretamente do PyPI: ::"
 
 #: ../../intro.rst:28
 msgid "If you are using Windows, then the following should be used instead: ::"
-msgstr ""
+msgstr "Se você estiver usando o Windows, então o seguinte deve ser usado: ::"
 
 #: ../../intro.rst:33
-msgid ""
-"To get voice support, you should use ``discord.py[voice]`` instead of "
-"``discord.py``, e.g. ::"
-msgstr ""
+msgid "To get voice support, you should use ``discord.py[voice]`` instead of ``discord.py``, e.g. ::"
+msgstr "Para obter suporte de voz, você deve usar ``discord.py[voice]`` ao invés de ``discord.py``, ex.: ::"
 
 #: ../../intro.rst:37
-msgid ""
-"On Linux environments, installing voice requires getting the following "
-"dependencies:"
-msgstr ""
+msgid "On Linux environments, installing voice requires getting the following dependencies:"
+msgstr "Em ambientes Linux, instalar voz requer obter as seguintes dependências:"
 
 #: ../../intro.rst:39
 msgid "`libffi <https://github.com/libffi/libffi>`_"
-msgstr ""
+msgstr "`libffi <https://github.com/libffi/libffi>`_"
 
 #: ../../intro.rst:40
 msgid "`libnacl <https://github.com/saltstack/libnacl>`_"
-msgstr ""
+msgstr "`libnacl <https://github.com/saltstack/libnacl>`_"
 
 #: ../../intro.rst:41
 msgid "`python3-dev <https://packages.debian.org/python3-dev>`_"
-msgstr ""
+msgstr "`python3-dev <https://packages.debian.org/python3-dev>`_"
 
 #: ../../intro.rst:43
-msgid ""
-"For a Debian-based system, the following command will get these "
-"dependencies:"
-msgstr ""
+msgid "For a Debian-based system, the following command will get these dependencies:"
+msgstr "Para um sistema baseado em Debian, o seguinte comando obterá estas dependências:"
 
 #: ../../intro.rst:49
 msgid "Remember to check your permissions!"
-msgstr ""
+msgstr "Lembre-se de verificar suas permissões!"
 
 #: ../../intro.rst:52
 msgid "Virtual Environments"
-msgstr ""
+msgstr "Ambientes Virtuais"
 
 #: ../../intro.rst:54
-msgid ""
-"Sometimes you want to keep libraries from polluting system installs or "
-"use a different version of libraries than the ones installed on the "
-"system. You might also not have permissions to install libraries system-"
-"wide. For this purpose, the standard library as of Python 3.3 comes with "
-"a concept called \"Virtual Environment\"s to help maintain these separate"
-" versions."
-msgstr ""
+msgid "Sometimes you want to keep libraries from polluting system installs or use a different version of libraries than the ones installed on the system. You might also not have permissions to install libraries system-wide. For this purpose, the standard library as of Python 3.3 comes with a concept called \"Virtual Environment\"s to help maintain these separate versions."
+msgstr "Às vezes, você quer evitar que as bibliotecas poluam as instalações do sistema ou usar uma versão de bibliotecas diferente das instaladas no sistema. Você também pode não ter permissões para instalar bibliotecas em todo o sistema. Para este propósito, a biblioteca padrão do Python 3.3 vem com um conceito chamado \"Ambiente Virtual\" para ajudar a manter essas versões separadas."
 
 #: ../../intro.rst:59
 msgid "A more in-depth tutorial is found on :doc:`py:tutorial/venv`."
-msgstr ""
+msgstr "Um tutorial mais aprofundado é encontrado em :doc:`py:tutorial/venv`."
 
 #: ../../intro.rst:61
 msgid "However, for the quick and dirty:"
-msgstr ""
+msgstr "No entanto, para a gambiarra:"
 
 #: ../../intro.rst:63
 msgid "Go to your project's working directory:"
-msgstr ""
+msgstr "Vá para o diretório do seu projeto:"
 
 #: ../../intro.rst:70
 msgid "Activate the virtual environment:"
-msgstr ""
+msgstr "Ative o ambiente virtual:"
 
 #: ../../intro.rst:76
 msgid "On Windows you activate it with:"
-msgstr ""
+msgstr "No Windows, você o ativará com:"
 
 #: ../../intro.rst:82
 msgid "Use pip like usual:"
-msgstr ""
+msgstr "Use pip como de costume:"
 
 #: ../../intro.rst:88
 msgid "Congratulations. You now have a virtual environment all set up."
-msgstr ""
+msgstr "Parabéns. Agora você tem um ambiente virtual configurado."
 
 #: ../../intro.rst:91
 msgid "Basic Concepts"
-msgstr ""
+msgstr "Conceitos Básicos"
 
 #: ../../intro.rst:93
-msgid ""
-"discord.py revolves around the concept of :ref:`events <discord-api-"
-"events>`. An event is something you listen to and then respond to. For "
-"example, when a message happens, you will receive an event about it that "
-"you can respond to."
-msgstr ""
+msgid "discord.py revolves around the concept of :ref:`events <discord-api-events>`. An event is something you listen to and then respond to. For example, when a message happens, you will receive an event about it that you can respond to."
+msgstr "O discord.py gira em torno do conceito de :ref:`eventos <discord-api-events>`. Um evento é algo que você ouve e então responde. Por exemplo, quando uma mensagem é criada, você receberá um evento sobre isso que você pode responder."
 
 #: ../../intro.rst:97
 msgid "A quick example to showcase how events work:"
-msgstr ""
-
+msgstr "Um exemplo rápido para mostrar como os eventos funcionam:"

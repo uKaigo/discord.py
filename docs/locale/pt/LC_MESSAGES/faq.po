@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: discordpy-pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-30 23:51-0300\n"
-"PO-Revision-Date: 2021-01-31 22:37\n"
+"PO-Revision-Date: 2021-02-15 00:34\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgstr "Coroutines"
 
 #: ../../faq.rst:16
 msgid "Questions regarding coroutines and asyncio belong here."
-msgstr "As perguntas relacionadas às corrotinas e asyncio pertencem aqui."
+msgstr "As perguntas relacionadas às coroutines e asyncio pertencem aqui."
 
 #: ../../faq.rst:19
 msgid "What is a coroutine?"
@@ -51,155 +51,155 @@ msgstr "**Se você esquecer de usar await em uma coroutine, a coroutine não ser
 
 #: ../../faq.rst:29
 msgid "Where can I use ``await``\\?"
-msgstr ""
+msgstr "Onde posso usar ``await``\\?"
 
 #: ../../faq.rst:31
 msgid "You can only use ``await`` inside ``async def`` functions and nowhere else."
-msgstr ""
+msgstr "Você só pode usar ``await`` dentro de funções ``async def`` e em nenhum outro lugar."
 
 #: ../../faq.rst:34
 msgid "What does \"blocking\" mean?"
-msgstr ""
+msgstr "O que significa \"blocking\"?"
 
 #: ../../faq.rst:36
 msgid "In asynchronous programming a blocking call is essentially all the parts of the function that are not ``await``. Do not despair however, because not all forms of blocking are bad! Using blocking calls is inevitable, but you must work to make sure that you don't excessively block functions. Remember, if you block for too long then your bot will freeze since it has not stopped the function's execution at that point to do other things."
-msgstr ""
+msgstr "Em programação assíncrona uma chamada blocking é, essencialmente, todas as partes da função que não são ``await``. Mas não se desespere, porque nem todas as formas de bloqueio são ruins! Usar chamadas com bloqueio é inevitável, mas você deve trabalhar para garantir que você não bloqueie demais as funções. Lembre-se, se você bloquear por muito tempo então seu bot irá congelar, já que ele não interrompeu a execução da função naquele ponto para fazer outras coisas."
 
 #: ../../faq.rst:41
 msgid "If logging is enabled, this library will attempt to warn you that blocking is occurring with the message: ``Heartbeat blocked for more than N seconds.`` See :ref:`logging_setup` for details on enabling logging."
-msgstr ""
+msgstr "Se logging estiver ativado, essa biblioteca tentará avisá-lo que o blocking está ocorrendo com a mensagem: ``Heartbeat blocked for more than N seconds.`` Veja :ref:`logging_setup` para detalhes sobre como habilitar logging."
 
 #: ../../faq.rst:45
 msgid "A common source of blocking for too long is something like :func:`time.sleep`. Don't do that. Use :func:`asyncio.sleep` instead. Similar to this example: ::"
-msgstr ""
+msgstr "Uma fonte comum de blocking por muito tempo é algo como :func:`time.sleep`. Não faça isso. Use :func:`asyncio.sleep`. Similar a este exemplo: ::"
 
 #: ../../faq.rst:54
 msgid "Another common source of blocking for too long is using HTTP requests with the famous module :doc:`req:index`. While :doc:`req:index` is an amazing module for non-asynchronous programming, it is not a good choice for :mod:`asyncio` because certain requests can block the event loop too long. Instead, use the :doc:`aiohttp <aio:index>` library which is installed on the side with this library."
-msgstr ""
+msgstr "Outra fonte comum de blocking por muito tempo é usar solicitações HTTP com o famoso módulo :doc:`req:index`. Enquanto :doc:`req:index` é um módulo incrível para programação não assíncrona, não é uma boa escolha para :mod:`asyncio` porque certas solicitações podem bloquear o loop de eventos por muito tempo. Em vez disso, use a biblioteca :doc:`aiohttp <aio:index>` que está instalada junto com essa biblioteca."
 
 #: ../../faq.rst:59
 msgid "Consider the following example: ::"
-msgstr ""
+msgstr "Considere o seguinte exemplo: ::"
 
 #: ../../faq.rst:75
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: ../../faq.rst:77
 msgid "General questions regarding library usage belong here."
-msgstr ""
+msgstr "As perguntas gerais sobre o uso da biblioteca pertencem aqui."
 
 #: ../../faq.rst:80
 msgid "Where can I find usage examples?"
-msgstr ""
+msgstr "Onde posso encontrar exemplos de uso?"
 
 #: ../../faq.rst:82
 msgid "Example code can be found in the `examples folder <https://github.com/Rapptz/discord.py/tree/master/examples>`_ in the repository."
-msgstr ""
+msgstr "Exemplo de códigos pode ser encontrado na `pasta de exemplos <https://github.com/Rapptz/discord.py/tree/master/examples>`_ no repositório."
 
 #: ../../faq.rst:86
 msgid "How do I set the \"Playing\" status?"
-msgstr ""
+msgstr "Como faço para definir o status \"Jogando\"?"
 
 #: ../../faq.rst:88
 msgid "There is a method for this under :class:`Client` called :meth:`Client.change_presence`. The relevant aspect of this is its ``activity`` keyword argument which takes in an :class:`Activity` object."
-msgstr ""
+msgstr "Há um método para isso sob :class:`Client` chamado :meth:`Client.change_presence`. O aspecto relevante disso é o seu argumento nomeado ``activity`` que recebe um objeto :class:`Activity`."
 
 #: ../../faq.rst:91
 msgid "The status type (playing, listening, streaming, watching) can be set using the :class:`ActivityType` enum. For memory optimisation purposes, some activities are offered in slimmed down versions:"
-msgstr ""
+msgstr "O tipo de status (jogando, ouvindo, transmitindo, assistindo) pode ser definido usando o enum :class:`ActivityType`. Para fins de otimização de memória, algumas atividades são oferecidas em versões reduzidas:"
 
 #: ../../faq.rst:94
 msgid ":class:`Game`"
-msgstr ""
+msgstr ":class:`Game`"
 
 #: ../../faq.rst:95
 msgid ":class:`Streaming`"
-msgstr ""
+msgstr ":class:`Streaming`"
 
 #: ../../faq.rst:97
 msgid "Putting both of these pieces of info together, you get the following: ::"
-msgstr ""
+msgstr "Juntando essas duas informações, você obtém o seguinte: ::"
 
 #: ../../faq.rst:106
 msgid "How do I send a message to a specific channel?"
-msgstr ""
+msgstr "Como eu mando uma mensagem para um canal específico?"
 
 #: ../../faq.rst:108
 msgid "You must fetch the channel directly and then call the appropriate method. Example: ::"
-msgstr ""
+msgstr "Você deve buscar o canal diretamente e então chamar o método apropriado. Exemplo: ::"
 
 #: ../../faq.rst:114
 msgid "How do I send a DM?"
-msgstr ""
+msgstr "Como faço para enviar uma mensagem em DM?"
 
 #: ../../faq.rst:116
 msgid "Get the :class:`User` or :class:`Member` object and call :meth:`abc.Messageable.send`. For example: ::"
-msgstr ""
+msgstr "Obtenha o objeto :class:`User` ou :class:`Member` e use :meth:`abc.Messageable.send`. Por exemplo: ::"
 
 #: ../../faq.rst:121
 msgid "If you are responding to an event, such as :func:`on_message`, you already have the :class:`User` object via :attr:`Message.author`: ::"
-msgstr ""
+msgstr "Se você estiver respondendo a um evento, como :func:`on_message`, você já tem o objeto :class:`User` via :attr:`Message.author`: ::"
 
 #: ../../faq.rst:126
 msgid "How do I get the ID of a sent message?"
-msgstr ""
+msgstr "Como faço para obter o ID de uma mensagem enviada?"
 
 #: ../../faq.rst:128
 msgid ":meth:`abc.Messageable.send` returns the :class:`Message` that was sent. The ID of a message can be accessed via :attr:`Message.id`: ::"
-msgstr ""
+msgstr ":meth:`abc.Messageable.send` retorna a :class:`Message` que foi enviada. O ID de uma mensagem pode ser acessada através de :attr:`Message.id`: ::"
 
 #: ../../faq.rst:135
 msgid "How do I upload an image?"
-msgstr ""
+msgstr "Como eu envio uma imagem?"
 
 #: ../../faq.rst:137
 msgid "To upload something to Discord you have to use the :class:`File` object."
-msgstr ""
+msgstr "Para enviar algo para o Discord você tem que usar o objeto :class:`File`."
 
 #: ../../faq.rst:139
 msgid "A :class:`File` accepts two parameters, the file-like object (or file path) and the filename to pass to Discord when uploading."
-msgstr ""
+msgstr "Um :class:`File` aceita dois parâmetros, o arquivo ou similar (ou caminho para o arquivo) e o nome do arquivo para passar para o Discord ao enviar."
 
 #: ../../faq.rst:142
 msgid "If you want to upload an image it's as simple as: ::"
-msgstr ""
+msgstr "Se você quer enviar uma imagem é simples como: ::"
 
 #: ../../faq.rst:146
 msgid "If you have a file-like object you can do as follows: ::"
-msgstr ""
+msgstr "Se você tem um objeto arquivo ou similar, você pode fazer o seguinte: ::"
 
 #: ../../faq.rst:151
 msgid "To upload multiple files, you can use the ``files`` keyword argument instead of ``file``\\: ::"
-msgstr ""
+msgstr "Para enviar vários arquivos, você pode usar o argumento nomeado ``files``, em vez de ``file``: ::"
 
 #: ../../faq.rst:159
 msgid "If you want to upload something from a URL, you will have to use an HTTP request using :doc:`aiohttp <aio:index>` and then pass an :class:`io.BytesIO` instance to :class:`File` like so:"
-msgstr ""
+msgstr "Se você quiser enviar alguma coisa de uma URL, você terá que usar uma solicitação HTTP usando o :doc:`aiohttp <aio:index>` e depois passar um :class:`io.BytesIO` para :class:`File` da seguinte forma:"
 
 #: ../../faq.rst:176
 msgid "How can I add a reaction to a message?"
-msgstr ""
+msgstr "Como posso adicionar uma reação a uma mensagem?"
 
 #: ../../faq.rst:178
 msgid "You use the :meth:`Message.add_reaction` method."
-msgstr ""
+msgstr "Você usa o método :meth:`Message.add_reaction`."
 
 #: ../../faq.rst:180
 msgid "If you want to use unicode emoji, you must pass a valid unicode code point in a string. In your code, you can write this in a few different ways:"
-msgstr ""
+msgstr "Se você quiser usar emoji unicode, você deve passar um ponto unicode válido em uma string. No seu código, você pode escrever isso de algumas maneiras diferentes:"
 
 #: ../../faq.rst:182
 msgid "``'👍'``"
-msgstr ""
+msgstr "``'👍'``"
 
 #: ../../faq.rst:183
 msgid "``'\\U0001F44D'``"
-msgstr ""
+msgstr "``'\\U0001F44D'``"
 
 #: ../../faq.rst:184
 msgid "``'\\N{THUMBS UP SIGN}'``"
-msgstr ""
+msgstr "``'\\N{THUMBS UP SIGN}'``"
 
 #: ../../faq.rst:186
 #: ../../faq.rst:202
@@ -207,209 +207,209 @@ msgstr ""
 #: ../../faq.rst:293
 #: ../../faq.rst:313
 msgid "Quick example: ::"
-msgstr ""
+msgstr "Exemplo rápido: ::"
 
 #: ../../faq.rst:192
 msgid "In case you want to use emoji that come from a message, you already get their code points in the content without needing to do anything special. You **cannot** send ``':thumbsup:'`` style shorthands."
-msgstr ""
+msgstr "Caso você queira usar emojis que venham de uma mensagem, você já recebe seus pontos de código no conteúdo sem precisar fazer nada de especial. Você **não pode** enviar abreviações como ``':thumbsup:'``."
 
 #: ../../faq.rst:195
 msgid "For custom emoji, you should pass an instance of :class:`Emoji`. You can also pass a ``'<:name:id>'`` string, but if you can use said emoji, you should be able to use :meth:`Client.get_emoji` to get an emoji via ID or use :func:`utils.find`/ :func:`utils.get` on :attr:`Client.emojis` or :attr:`Guild.emojis` collections."
-msgstr ""
+msgstr "Para emojis personalizados, você deve passar uma instância de :class:`Emoji`. Você também pode passar uma string ``'<:nome:id>'``, mas se você puder usar esse emoji, você deverá conseguir usar :meth:`Client.get_emoji` para obter um emoji via ID ou usar :func:`utils.find`/ :func:`utils.get` nas coleções :attr:`Client.emojis` ou :attr:`Guild.emojis`."
 
 #: ../../faq.rst:199
 msgid "The name and ID of a custom emoji can be found with the client by prefixing ``:custom_emoji:`` with a backslash. For example, sending the message ``\\:python3:`` with the client will result in ``<:python3:232720527448342530>``."
-msgstr ""
+msgstr "O nome e o ID de um emoji personalizado podem ser encontrados com o cliente ao prefixar ``:custom_emoji:`` com uma barra invertida. Por exemplo, enviar a mensagem ``\\:python3:`` com o cliente resultará em ``<:python3:232720527448342530>``."
 
 #: ../../faq.rst:219
 msgid "How do I pass a coroutine to the player's \"after\" function?"
-msgstr ""
+msgstr "Como eu passo uma coroutine para a função \"after\" do tocador?"
 
 #: ../../faq.rst:221
 msgid "The library's music player launches on a separate thread, ergo it does not execute inside a coroutine. This does not mean that it is not possible to call a coroutine in the ``after`` parameter. To do so you must pass a callable that wraps up a couple of aspects."
-msgstr ""
+msgstr "O tocador de música da biblioteca lança em um thread separado, logo ele não é executado dentro de uma coroutine. Isto não significa que não é possível chamar uma coroutine no parâmetro ``after``. Para fazer isso, tem de passar um callable que engloba alguns aspectos."
 
 #: ../../faq.rst:225
 msgid "The first gotcha that you must be aware of is that calling a coroutine is not a thread-safe operation. Since we are technically in another thread, we must take caution in calling thread-safe operations so things do not bug out. Luckily for us, :mod:`asyncio` comes with a :func:`asyncio.run_coroutine_threadsafe` function that allows us to call a coroutine from another thread."
-msgstr ""
+msgstr "A primeira falha que você deve estar ciente é que chamar uma coroutine não é uma operação segura para threads. Uma vez que estamos tecnicamente em outra thread, devemos ter cuidado em chamar operações seguras para as coisas não darem problemas. Felizmente para nós, o :mod:`asyncio` vem com uma função :func:`asyncio.run_coroutine_threadsafe` que nos permite chamar um coroutine de outra thread."
 
 #: ../../faq.rst:230
 msgid "However, this function returns a :class:`concurrent.Future` and to actually call it we have to fetch its result. Putting all of this together we can do the following: ::"
-msgstr ""
+msgstr "No entanto, essa função retorna um :class:`concurrent.Future` e para realmente chamá-la precisamos buscar seu resultado. Juntando tudo isso, podemos fazer o seguinte: ::"
 
 #: ../../faq.rst:245
 msgid "How do I run something in the background?"
-msgstr ""
+msgstr "Como faço para executar algo em segundo plano?"
 
 #: ../../faq.rst:247
 msgid "`Check the background_task.py example. <https://github.com/Rapptz/discord.py/blob/master/examples/background_task.py>`_"
-msgstr ""
+msgstr "`Veja o exemplo background_task.py. <https://github.com/Rapptz/discord.py/blob/master/examples/background_task.py>`_"
 
 #: ../../faq.rst:250
 msgid "How do I get a specific model?"
-msgstr ""
+msgstr "Como faço para obter um modelo específico?"
 
 #: ../../faq.rst:252
 msgid "There are multiple ways of doing this. If you have a specific model's ID then you can use one of the following functions:"
-msgstr ""
+msgstr "Existem várias maneiras de fazer isso. Se você tem um ID de um modelo específico então você pode usar uma das seguintes funções:"
 
 #: ../../faq.rst:255
 msgid ":meth:`Client.get_channel`"
-msgstr ""
+msgstr ":meth:`Client.get_channel`"
 
 #: ../../faq.rst:256
 msgid ":meth:`Client.get_guild`"
-msgstr ""
+msgstr ":meth:`Client.get_guild`"
 
 #: ../../faq.rst:257
 msgid ":meth:`Client.get_user`"
-msgstr ""
+msgstr ":meth:`Client.get_user`"
 
 #: ../../faq.rst:258
 msgid ":meth:`Client.get_emoji`"
-msgstr ""
+msgstr ":meth:`Client.get_emoji`"
 
 #: ../../faq.rst:259
 msgid ":meth:`Guild.get_member`"
-msgstr ""
+msgstr ":meth:`Guild.get_member`"
 
 #: ../../faq.rst:260
 msgid ":meth:`Guild.get_channel`"
-msgstr ""
+msgstr ":meth:`Guild.get_channel`"
 
 #: ../../faq.rst:261
 msgid ":meth:`Guild.get_role`"
-msgstr ""
+msgstr ":meth:`Guild.get_role`"
 
 #: ../../faq.rst:263
 msgid "The following use an HTTP request:"
-msgstr ""
+msgstr "O seguinte usa uma solicitação HTTP:"
 
 #: ../../faq.rst:265
 msgid ":meth:`abc.Messageable.fetch_message`"
-msgstr ""
+msgstr ":meth:`abc.Messageable.fetch_message`"
 
 #: ../../faq.rst:266
 msgid ":meth:`Client.fetch_user`"
-msgstr ""
+msgstr ":meth:`Client.fetch_user`"
 
 #: ../../faq.rst:267
 msgid ":meth:`Client.fetch_guilds`"
-msgstr ""
+msgstr ":meth:`Client.fetch_guilds`"
 
 #: ../../faq.rst:268
 msgid ":meth:`Client.fetch_guild`"
-msgstr ""
+msgstr ":meth:`Client.fetch_guild`"
 
 #: ../../faq.rst:269
 msgid ":meth:`Guild.fetch_emoji`"
-msgstr ""
+msgstr ":meth:`Guild.fetch_emoji`"
 
 #: ../../faq.rst:270
 msgid ":meth:`Guild.fetch_emojis`"
-msgstr ""
+msgstr ":meth:`Guild.fetch_emojis`"
 
 #: ../../faq.rst:271
 msgid ":meth:`Guild.fetch_member`"
-msgstr ""
+msgstr ":meth:`Guild.fetch_member`"
 
 #: ../../faq.rst:274
 msgid "If the functions above do not help you, then use of :func:`utils.find` or :func:`utils.get` would serve some use in finding specific models."
-msgstr ""
+msgstr "Se as funções acima não te ajudarem, então o uso de :func:`utils.find` ou :func:`utils.get` serviria para encontrar modelos específicos."
 
 #: ../../faq.rst:288
 msgid "How do I make a web request?"
-msgstr ""
+msgstr "Como faço uma solicitação web?"
 
 #: ../../faq.rst:290
 msgid "To make a request, you should use a non-blocking library. This library already uses and requires a 3rd party library for making requests, ``aiohttp``."
-msgstr ""
+msgstr "Para fazer uma solicitação, você deve usar uma biblioteca não blocking. Esta biblioteca já usa e requer uma biblioteca de terceiros para fazer solicitações, ``aiohttp``."
 
 #: ../../faq.rst:300
 msgid "See `aiohttp's full documentation <http://aiohttp.readthedocs.io/en/stable/>`_ for more information."
-msgstr ""
+msgstr "Veja a `documentação completa do aiohttp <http://aiohttp.readthedocs.io/en/stable/>`_ para mais informações."
 
 #: ../../faq.rst:303
 msgid "How do I use a local image file for an embed image?"
-msgstr ""
+msgstr "Como eu uso um arquivo de imagem local em uma imagem no embed?"
 
 #: ../../faq.rst:305
 msgid "Discord special-cases uploading an image attachment and using it within an embed so that it will not display separately, but instead in the embed's thumbnail, image, footer or author icon."
-msgstr ""
+msgstr "Casas especiais do Discord enviando um anexo de imagem e usando-o dentro de um embed para que não seja exibido separadamente, mas em vez disso no ícone da miniatura, imagem, rodapé ou autor do embed."
 
 #: ../../faq.rst:308
 msgid "To do so, upload the image normally with :meth:`abc.Messageable.send`, and set the embed's image URL to ``attachment://image.png``, where ``image.png`` is the filename of the image you will send."
-msgstr ""
+msgstr "Para fazer isso, envie a imagem normalmente usando :meth:`abc.Messageable.send`, e defina a URL da imagem do embed para ``attachment://imagem.png``, onde ``imagem.png`` é o nome da imagem que você vai enviar."
 
 #: ../../faq.rst:322
 msgid "Due to a Discord limitation, filenames may not include underscores."
-msgstr ""
+msgstr "Devido a uma limitação do Discord, nomes de arquivos não podem ter underscore."
 
 #: ../../faq.rst:325
 msgid "Is there an event for audit log entries being created?"
-msgstr ""
+msgstr "Existe um evento para entradas sendo criadas no registro de auditoria?"
 
 #: ../../faq.rst:327
 msgid "Since Discord does not dispatch this information in the gateway, the library cannot provide this information. This is currently a Discord limitation."
-msgstr ""
+msgstr "Como o Discord não envia essas informações no gateway, a biblioteca não pode fornecer essas informações. Isso é uma limitação do Discord."
 
 #: ../../faq.rst:331
 msgid "Commands Extension"
-msgstr ""
+msgstr "Extensão de Comandos"
 
 #: ../../faq.rst:333
 msgid "Questions regarding ``discord.ext.commands`` belong here."
-msgstr ""
+msgstr "Perguntas sobre ``discord.ext.commands`` pertencem aqui."
 
 #: ../../faq.rst:336
 msgid "Why does ``on_message`` make my commands stop working?"
-msgstr ""
+msgstr "Por que ``on_message`` faz meus comandos pararem de funcionar?"
 
 #: ../../faq.rst:338
 msgid "Overriding the default provided ``on_message`` forbids any extra commands from running. To fix this, add a ``bot.process_commands(message)`` line at the end of your ``on_message``. For example: ::"
-msgstr ""
+msgstr "Sobrescrever ``on_message`` padrão proíbe qualquer comando extra de ser executado. Para corrigir isso, adicione uma linha ``bot.process_commands(message)`` no final do seu ``on_message``. Por exemplo: ::"
 
 #: ../../faq.rst:347
 msgid "Alternatively, you can place your ``on_message`` logic into a **listener**. In this setup, you should not manually call ``bot.process_commands()``. This also allows you to do multiple things asynchronously in response to a message. Example::"
-msgstr ""
+msgstr "Como alternativa, você pode colocar sua lógica ``on_message`` em um **listener**. Nesta configuração, você não deve chamar manualmente ``bot.process_commands()``. Isso também permite que você faça várias coisas assincronamente em resposta a uma mensagem. Exemplo::"
 
 #: ../../faq.rst:357
 msgid "Why do my arguments require quotes?"
-msgstr ""
+msgstr "Por que meus argumentos precisam de aspas?"
 
 #: ../../faq.rst:359
 msgid "In a simple command defined as: ::"
-msgstr ""
+msgstr "Em um comando simples definido como: ::"
 
 #: ../../faq.rst:365
 msgid "Calling it via ``?echo a b c`` will only fetch the first argument and disregard the rest. To fix this you should either call it via ``?echo \"a b c\"`` or change the signature to have \"consume rest\" behaviour. Example: ::"
-msgstr ""
+msgstr "Chamando isso via ``?echo a b c`` irá buscar apenas o primeiro argumento e ignorar o resto. Para corrigir este problema, você deve chamá-lo por ``?echo \"b c\"`` ou mudar a assinatura para ter o comportamento de \"consumo de repouso\". Exemplo: ::"
 
 #: ../../faq.rst:372
 msgid "This will allow you to use ``?echo a b c`` without needing the quotes."
-msgstr ""
+msgstr "Isso permitirá que você use ``?echo a b c`` sem precisar das aspas."
 
 #: ../../faq.rst:375
 msgid "How do I get the original ``message``\\?"
-msgstr ""
+msgstr "Como posso obter a ``message`` original?"
 
 #: ../../faq.rst:377
 msgid "The :class:`~ext.commands.Context` contains an attribute, :attr:`~.Context.message` to get the original message."
-msgstr ""
+msgstr "O :class:`~ext.commands.Context` contém um atributo, :attr:`~.Context.message` para obter a mensagem original."
 
 #: ../../faq.rst:380
 #: ../../faq.rst:392
 msgid "Example: ::"
-msgstr ""
+msgstr "Exemplo: ::"
 
 #: ../../faq.rst:387
 msgid "How do I make a subcommand?"
-msgstr ""
+msgstr "Como faço um subcomando?"
 
 #: ../../faq.rst:389
 msgid "Use the ``group`` decorator. This will transform the callback into a ``Group`` which will allow you to add commands into the group operating as \"subcommands\". These groups can be arbitrarily nested as well."
-msgstr ""
+msgstr "Use o decorador ``group``. Isso vai transformar o callback em um ``Group`` que vai permitir adicionar comandos no grupo que funciona como \"subcomandos\". Estes grupos também podem ser arbitrariamente aninhados."
 
 #: ../../faq.rst:403
 msgid "This could then be used as ``?git push origin master``."
-msgstr ""
+msgstr "Isto poderia ser usado como ``?git push origin master``."

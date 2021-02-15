@@ -1,173 +1,136 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2015-present, Rapptz
-# This file is distributed under the same license as the discord.py package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: discord.py 1.7.0a\n"
+"Project-Id-Version: discordpy-pt\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-30 23:51-0300\n"
-"PO-Revision-Date: 2021-01-31 19:17-0300\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: pt\n"
-"Language-Team: pt <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"PO-Revision-Date: 2021-02-15 00:15\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.8.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: discordpy-pt\n"
+"X-Crowdin-Project-ID: 439524\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: discord.pot\n"
+"X-Crowdin-File-ID: 46\n"
+"Language: pt_BR\n"
 
 #: ../../discord.rst:4
 msgid "Creating a Bot Account"
-msgstr ""
+msgstr "Criando uma Conta de Bot"
 
 #: ../../discord.rst:6
-msgid ""
-"In order to work with the library and the Discord API in general, we must"
-" first create a Discord Bot account."
-msgstr ""
+msgid "In order to work with the library and the Discord API in general, we must first create a Discord Bot account."
+msgstr "Para trabalhar com a biblioteca e a API do Discord em geral, precisamos primeiro criar uma conta de Bot do Discord."
 
 #: ../../discord.rst:8
 msgid "Creating a Bot account is a pretty straightforward process."
-msgstr ""
+msgstr "Criar uma conta Bot é um processo muito simples."
 
-#: ../../discord.rst:10 ../../discord.rst:64
-msgid ""
-"Make sure you're logged on to the `Discord website "
-"<https://discord.com>`_."
-msgstr ""
+#: ../../discord.rst:10
+#: ../../discord.rst:64
+msgid "Make sure you're logged on to the `Discord website <https://discord.com>`_."
+msgstr "Certifique-se de estar logado no `website do Discord <https://discord.com>`_."
 
-#: ../../discord.rst:11 ../../discord.rst:65
-msgid ""
-"Navigate to the `application page "
-"<https://discord.com/developers/applications>`_"
-msgstr ""
+#: ../../discord.rst:11
+#: ../../discord.rst:65
+msgid "Navigate to the `application page <https://discord.com/developers/applications>`_"
+msgstr "Navegue para a `página da aplicação <https://discord.com/developers/applications>`_"
 
 #: ../../discord.rst:12
 msgid "Click on the \"New Application\" button."
-msgstr ""
+msgstr "Clique no botão \"New Application\"."
 
 #: ../../discord.rst:17
 msgid "Give the application a name and click \"Create\"."
-msgstr ""
+msgstr "Dê um nome ao aplicativo e clique em \"Create\"."
 
 #: ../../discord.rst:22
-msgid ""
-"Create a Bot User by navigating to the \"Bot\" tab and clicking \"Add "
-"Bot\"."
-msgstr ""
+msgid "Create a Bot User by navigating to the \"Bot\" tab and clicking \"Add Bot\"."
+msgstr "Crie um usuário Bot navegando até a aba \"Bot\" e clicando em \"Add Bot\"."
 
 #: ../../discord.rst:24
 msgid "Click \"Yes, do it!\" to continue."
-msgstr ""
+msgstr "Clique em \"Yes, do it!\" para continuar."
 
 #: ../../discord.rst:28
-msgid ""
-"Make sure that **Public Bot** is ticked if you want others to invite your"
-" bot."
-msgstr ""
+msgid "Make sure that **Public Bot** is ticked if you want others to invite your bot."
+msgstr "Certifique-se de que o **Public bot** esteja marcado se quiser que outros convidem o seu bot."
 
 #: ../../discord.rst:30
-msgid ""
-"You should also make sure that **Require OAuth2 Code Grant** is unchecked"
-" unless you are developing a service that needs it. If you're unsure, "
-"then **leave it unchecked**."
-msgstr ""
+msgid "You should also make sure that **Require OAuth2 Code Grant** is unchecked unless you are developing a service that needs it. If you're unsure, then **leave it unchecked**."
+msgstr "Você também deve se certificar de que **Require OAuth2 Code Grant** está desmarcado, a menos que você esteja desenvolvendo um serviço que precisa disso. Se você não tem certeza, então **deixe ele desmarcado**."
 
 #: ../../discord.rst:36
 msgid "Copy the token using the \"Copy\" button."
-msgstr ""
+msgstr "Copie o token usando o botão \"Copy\"."
 
 #: ../../discord.rst:38
 msgid "**This is not the Client Secret at the General Information page.**"
-msgstr ""
+msgstr "**Este não é o Client Secret na página General Information.**"
 
 #: ../../discord.rst:42
-msgid ""
-"It should be worth noting that this token is essentially your bot's "
-"password. You should **never** share this to someone else. In doing so, "
-"someone can log in to your bot and do malicious things, such as leaving "
-"servers, ban all members inside a server, or pinging everyone "
-"maliciously."
-msgstr ""
+msgid "It should be worth noting that this token is essentially your bot's password. You should **never** share this to someone else. In doing so, someone can log in to your bot and do malicious things, such as leaving servers, ban all members inside a server, or pinging everyone maliciously."
+msgstr "Vale a pena notar que este token é essencialmente a senha do seu bot. Você **nunca** deve compartilhar isso com outra pessoa. Ao fazer isso, alguém pode acessar seu bot e fazer coisas maliciosas, como deixar os servidores, banir todos os membros dentro de um servidor ou mencionar todos maliciosamente."
 
 #: ../../discord.rst:47
 msgid "The possibilities are endless, so **do not share this token.**"
-msgstr ""
+msgstr "As possibilidades são infinitas, então **não compartilhe esse token.**"
 
 #: ../../discord.rst:49
-msgid ""
-"If you accidentally leaked your token, click the \"Regenerate\" button as"
-" soon as possible. This revokes your old token and re-generates a new "
-"one. Now you need to use the new token to login."
-msgstr ""
+msgid "If you accidentally leaked your token, click the \"Regenerate\" button as soon as possible. This revokes your old token and re-generates a new one. Now you need to use the new token to login."
+msgstr "Se você vazou acidentalmente seu token, clique no botão \"Regenerate\" o mais rápido possível. Isso revoga seu antigo token e gera um novo. Agora você precisa usar o novo token para fazer login."
 
 #: ../../discord.rst:53
-msgid ""
-"And that's it. You now have a bot account and you can login with that "
-"token."
-msgstr ""
+msgid "And that's it. You now have a bot account and you can login with that token."
+msgstr "E é isso. Agora você tem uma conta bot e pode fazer o login com esse token."
 
 #: ../../discord.rst:58
 msgid "Inviting Your Bot"
-msgstr ""
+msgstr "Convidando seu Bot"
 
 #: ../../discord.rst:60
 msgid "So you've made a Bot User but it's not actually in any server."
-msgstr ""
+msgstr "Então você criou um usuário Bot mas não está em nenhum servidor."
 
 #: ../../discord.rst:62
 msgid "If you want to invite your bot you must create an invite URL for it."
-msgstr ""
+msgstr "Se você deseja convidar seu bot, você deve criar um URL de convite para ele."
 
 #: ../../discord.rst:66
 msgid "Click on your bot's page."
-msgstr ""
+msgstr "Clique na página do seu bot."
 
 #: ../../discord.rst:67
 msgid "Go to the \"OAuth2\" tab."
-msgstr ""
+msgstr "Vá para a aba \"OAuth2\"."
 
 #: ../../discord.rst:72
 msgid "Tick the \"bot\" checkbox under \"scopes\"."
-msgstr ""
+msgstr "Marque a caixa de seleção \"bot\" abaixo de \"scopes\"."
 
 #: ../../discord.rst:77
-msgid ""
-"Tick the permissions required for your bot to function under \"Bot "
-"Permissions\"."
-msgstr ""
+msgid "Tick the permissions required for your bot to function under \"Bot Permissions\"."
+msgstr "Marque as permissões necessárias para que o seu bot funcione sob \"Bot Permissions\"."
 
 #: ../../discord.rst:79
-msgid ""
-"Please be aware of the consequences of requiring your bot to have the "
-"\"Administrator\" permission."
-msgstr ""
+msgid "Please be aware of the consequences of requiring your bot to have the \"Administrator\" permission."
+msgstr "Por favor, esteja ciente das consequências de exigir que o bot tenha a permissão \"Administrator\"."
 
 #: ../../discord.rst:81
-msgid ""
-"Bot owners must have 2FA enabled for certain actions and permissions when"
-" added in servers that have Server-Wide 2FA enabled. Check the `2FA "
-"support page <https://support.discord.com/hc/en-us/articles/219576828"
-"-Setting-up-Two-Factor-Authentication>`_ for more information."
+msgid "Bot owners must have 2FA enabled for certain actions and permissions when added in servers that have Server-Wide 2FA enabled. Check the `2FA support page <https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication>`_ for more information."
 msgstr ""
 
 #: ../../discord.rst:86
-msgid ""
-"Now the resulting URL can be used to add your bot to a server. Copy and "
-"paste the URL into your browser, choose a server to invite the bot to, "
-"and click \"Authorize\"."
-msgstr ""
+msgid "Now the resulting URL can be used to add your bot to a server. Copy and paste the URL into your browser, choose a server to invite the bot to, and click \"Authorize\"."
+msgstr "Agora, a URL resultante pode ser usada para adicionar o seu bot a um servidor. Copie e cole a URL no seu navegador, escolha um servidor para o qual convidar o bot e clique em \"Autorizar\"."
 
 #: ../../discord.rst:91
 msgid "The person adding the bot needs \"Manage Server\" permissions to do so."
-msgstr ""
+msgstr "A pessoa que estiver adicionando o bot precisa das permissões \"Gerenciar Servidor\" para fazer isso."
 
 #: ../../discord.rst:93
-msgid ""
-"If you want to generate this URL dynamically at run-time inside your bot "
-"and using the :class:`discord.Permissions` interface, you can use "
-":func:`discord.utils.oauth_url`."
-msgstr ""
-
+msgid "If you want to generate this URL dynamically at run-time inside your bot and using the :class:`discord.Permissions` interface, you can use :func:`discord.utils.oauth_url`."
+msgstr "Se você quer gerar esse URL dinamicamente em tempo de execução dentro de seu bot e usando a interface de :class:`discord.Permissions`, você pode usar :func:`discord.utils.oauth_url`."
