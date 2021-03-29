@@ -68,8 +68,29 @@ def convert_emoji_reaction(emoji):
 
     raise InvalidArgument('emoji argument must be str, Emoji, or Reaction not {.__class__.__name__}.'.format(emoji))
 
-class Attachment:
+class Attachment(Hashable):
     """Represents an attachment from Discord.
+
+    .. container:: operations
+
+        .. describe:: str(x)
+
+            Returns the URL of the attachment.
+
+        .. describe:: x == y
+
+            Checks if the attachment is equal to another attachment.
+
+        .. describe:: x != y
+
+            Checks if the attachment is not equal to another attachment.
+
+        .. describe:: hash(x)
+
+            Returns the hash of the attachment.
+
+    .. versionchanged:: 1.7
+        Attachment can now be casted to :class:`str` and is hashable.
 
     Attributes
     ------------
@@ -110,6 +131,9 @@ class Attachment:
 
     def __repr__(self):
         return '<Attachment id={0.id} filename={0.filename!r} url={0.url!r}>'.format(self)
+
+    def __str__(self):
+        return self.url or ''
 
     async def save(self, fp, *, seek_begin=True, use_cached=False):
         """|coro|
@@ -784,9 +808,9 @@ class Message(Hashable):
 
         .. note::
 
-            This *does not* escape markdown. If you want to escape
-            markdown then use :func:`utils.escape_markdown` along
-            with this function.
+            This *does not* affect markdown. If you want to escape
+            or remove markdown then use :func:`utils.escape_markdown` or :func:`utils.remove_markdown` 
+            respectively, along with this function.
         """
 
         transformations = {

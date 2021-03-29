@@ -744,7 +744,9 @@ class User(BaseUser, discord.abc.Messageable):
         return [guild for guild in self._state._guilds.values() if guild.get_member(self.id)]
 
     async def create_dm(self):
-        """Creates a :class:`DMChannel` with this user.
+        """|coro|
+
+        Creates a :class:`DMChannel` with this user.
 
         This should be rarely called, as this is done transparently for most
         people.
@@ -765,6 +767,8 @@ class User(BaseUser, discord.abc.Messageable):
     @property
     def relationship(self):
         """Optional[:class:`Relationship`]: Returns the :class:`Relationship` with this user if applicable, ``None`` otherwise.
+
+        .. deprecated:: 1.7
 
         .. note::
 

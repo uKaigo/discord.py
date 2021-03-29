@@ -158,7 +158,7 @@ class Command(_BaseCommand):
         isn't one.
     cog: Optional[:class:`Cog`]
         The cog that this command belongs to. ``None`` if there isn't one.
-    checks: List[Callable[..., :class:`bool`]]
+    checks: List[Callable[[:class:`.Context`], :class:`bool`]]
         A list of predicates that verifies if the command could be executed
         with the given :class:`.Context` as the sole parameter. If an exception
         is necessary to be thrown to signal failure, then one inherited from
@@ -1959,8 +1959,11 @@ def cooldown(rate, per, type=BucketType.default):
         The number of times a command can be used before triggering a cooldown.
     per: :class:`float`
         The amount of seconds to wait for a cooldown when it's been triggered.
-    type: :class:`.BucketType`
-        The type of cooldown to have.
+    type: Union[:class:`.BucketType`, Callable[[:class:`.Message`], Any]]
+        The type of cooldown to have. If callable, should return a key for the mapping.
+        
+        .. versionchanged:: 1.7
+            Callables are now supported for custom bucket types.
     """
 
     def decorator(func):
