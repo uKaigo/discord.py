@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """
 The MIT License (MIT)
 
@@ -26,6 +24,11 @@ DEALINGS IN THE SOFTWARE.
 
 import discord.abc
 import discord.utils
+import re
+
+__all__ = (
+    'Context',
+)
 
 class Context(discord.abc.Messageable):
     r"""Represents the context in which a command is being invoked under.
@@ -93,7 +96,7 @@ class Context(discord.abc.Messageable):
         self.command_failed = attrs.pop('command_failed', False)
         self._state = self.message._state
 
-    async def invoke(self, *args, **kwargs):
+    async def invoke(self, command, /, *args, **kwargs):
         r"""|coro|
 
         Calls a command with the arguments given.
@@ -110,10 +113,6 @@ class Context(discord.abc.Messageable):
             You must take care in passing the proper arguments when
             using this function.
 
-        .. warning::
-
-            The first parameter passed **must** be the command being invoked.
-
         Parameters
         -----------
         command: :class:`.Command`
@@ -128,18 +127,12 @@ class Context(discord.abc.Messageable):
         TypeError
             The command argument to invoke is missing.
         """
-
-        try:
-            command = args[0]
-        except IndexError:
-            raise TypeError('Missing command to invoke.') from None
-
         arguments = []
         if command.cog is not None:
             arguments.append(command.cog)
 
         arguments.append(self)
-        arguments.extend(args[1:])
+        arguments.extend(args)
 
         ret = await command.callback(*arguments, **kwargs)
         return ret
@@ -213,6 +206,20 @@ class Context(discord.abc.Messageable):
 
     async def _get_channel(self):
         return self.channel
+
+    @property
+    def clean_prefix(self):
+        """:class:`str`: The cleaned up invoke prefix. i.e. mentions are ``@name`` instead of ``<@id>``.
+
+        .. versionadded:: 2.0
+        """
+        user = self.guild.me if self.guild else self.bot.user
+        # this breaks if the prefix mention is not the bot itself but I
+        # consider this to be an *incredibly* strange use case. I'd rather go
+        # for this common use case rather than waste performance for the
+        # odd one.
+        pattern = re.compile(r"<@!?%s>" % user.id)
+        return pattern.sub("@%s" % user.display_name.replace('\\', r'\\'), self.prefix)
 
     @property
     def cog(self):
@@ -335,7 +342,6 @@ class Context(discord.abc.Messageable):
         except CommandError as e:
             await cmd.on_help_command_error(self, e)
 
+    @discord.utils.copy_doc(discord.Message.reply)
     async def reply(self, content=None, **kwargs):
         return await self.message.reply(content, **kwargs)
-
-    reply.__doc__ = discord.Message.reply.__doc__
